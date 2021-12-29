@@ -57,7 +57,7 @@ public class Program
                 options.FileSizeLimit = 20 * 1024 * 1024; // The maximum log file size (20MB here)
                 options.FilesPerPeriodicityLimit = 200; // When maximum file size is reached, create a new file, up to a limit of 200 files per periodicity
                 options.Extension = "txt"; // The log file extension
-                options.Periodicity = PeriodicityOptions.Hourly // Roll log files hourly instead of daily.
+                options.Periodicity = PeriodicityOptions.Hourly; // Roll log files hourly instead of daily.
             })) 
             .UseStartup<Startup>()
             .Build();
